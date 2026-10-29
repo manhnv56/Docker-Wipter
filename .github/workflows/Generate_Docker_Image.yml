@@ -56,7 +56,7 @@ jobs:
         if: steps.version_check.outputs.update_needed == 'true'
         run: |
           git commit -m "Bump Wipter to ${{ steps.version_check.outputs.latest }} [skip ci]" || echo "No changes to commit"
-          git remote set-url origin https://techroy23:${{ secrets.GH_PAT }}@github.com/techroy23/Docker-Wipter.git
+          git remote set-url origin https://manhnv56:${{ secrets.GH_PAT }}@github.com/techroy23/Docker-Wipter.git
           git push origin main
 
       - name: Set up QEMU
@@ -95,5 +95,5 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository_owner }}/docker-wipter:${{ steps.version_check.outputs.latest }}
             ghcr.io/${{ github.repository_owner }}/docker-wipter:latest
-            docker.io/techroy23/docker-wipter:${{ steps.version_check.outputs.latest }}
-            docker.io/techroy23/docker-wipter:latest
+            docker.io/manhnv56/docker-wipter:${{ steps.version_check.outputs.latest }}
+            docker.io/manhnv56/docker-wipter:latest
