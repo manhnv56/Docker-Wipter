@@ -64,8 +64,8 @@ cat << 'EOF' > /usr/bin/lsb_release
 #!/bin/sh
 echo "No LSB modules are available.
 Distributor ID: Ubuntu
-Description:    Ubuntu 24.04 LTS
-Release:        24.04
+Description:    Ubuntu 26.04 LTS
+Release:        26.04
 Codename:       noble"
 EOF
 
@@ -78,8 +78,8 @@ echo " Static hostname: ${hostname}
       Machine ID: ${machine_id}
          Boot ID: ${boot_id}
   Virtualization: none
-Operating System: Ubuntu 24.04 LTS
-          Kernel: Linux 6.15.0-00-generic
+Operating System: Ubuntu 26.04 LTS
+          Kernel: Linux 7.0.0-00-generic
     Architecture: ${arch}
  Hardware Vendor: ${vendor}
   Hardware Model: ${model}
